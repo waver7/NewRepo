@@ -6,8 +6,15 @@ Lumen automatically tracks, organizes, and analyzes every transaction across all
 bank accounts, credit cards, and financial institutions — then turns that data into clear,
 actionable insight: where money goes, what's recurring, what's unusual, and how to hit your goals faster.
 
-This repository contains the complete product and engineering design for Lumen, covering
-vision, features, UX, data model, backend architecture, AI systems, security, and roadmap.
+This repository contains:
+
+- **[`app/`](app/) — a real, runnable Flutter app (iOS + Android)** implementing the core
+  product: auto-categorization with a learning loop, CSV import with smart column mapping
+  and dedup, subscription & price-increase detection, budgets, goals, insights, and a
+  demo-data mode so it works the moment you launch it. See [app/README.md](app/README.md)
+  for run/build/test instructions. Verified: `flutter analyze` clean, 29 tests passing.
+- **[`docs/`](docs/) — the complete product and engineering design**, covering vision,
+  features, UX, data model, backend architecture, AI systems, security, and roadmap.
 
 ## Document Index
 

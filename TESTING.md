@@ -1,11 +1,28 @@
 # Testing Guide
 
-## What's in this repo right now
+## Test the real app (it exists now)
 
-This repository contains the **complete product and engineering design** for Lumen
-(see [README](README.md) for the index) — there is **no runnable application code yet**.
-So "testing" today means validating the design; once the code is scaffolded, the sections
-below describe exactly how to test the running app.
+The Flutter app lives in [`app/`](app/) and runs on both Android and iOS. The fastest
+paths to seeing it work:
+
+```bash
+cd app
+flutter test       # 29 unit/widget tests over the money-critical logic
+flutter analyze    # zero issues
+flutter run        # launches on a connected device/emulator/simulator
+```
+
+Then follow the **5-minute manual test script** in [app/README.md](app/README.md) —
+it walks through demo mode, the planted price-increase and duplicate-charge insights,
+category learning, CSV import with duplicate skipping (sample file included at
+`app/sample_data/chase_checking.csv`), budgets, and goals.
+
+---
+
+## Testing the full cloud product (design reference)
+
+The sections below describe how the complete backend-connected product from the
+design docs gets tested once that phase is built.
 
 ---
 
